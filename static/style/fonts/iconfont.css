@@ -1,0 +1,80 @@
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1480906247854'); /* IE9*/
+  src: url('iconfont.eot?t=1480906247854#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1480906247854') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1480906247854') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1480906247854#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-close:before { content: "\e615"; }
+
+.icon-Certification:before { content: "\e616"; }
+
+.icon-box:before { content: "\e617"; }
+
+.icon-aircraft:before { content: "\e618"; }
+
+.icon-calendar:before { content: "\e619"; }
+
+.icon-comment:before { content: "\e61a"; }
+
+.icon-down:before { content: "\e61b"; }
+
+.icon-manifest:before { content: "\e61c"; }
+
+.icon-phone:before { content: "\e61e"; }
+
+.icon-pen:before { content: "\e61f"; }
+
+.icon-picture:before { content: "\e620"; }
+
+.icon-lock:before { content: "\e621"; }
+
+.icon-price:before { content: "\e622"; }
+
+.icon-positon:before { content: "\e623"; }
+
+.icon-starhover:before { content: "\e624"; }
+
+.icon-profile:before { content: "\e625"; }
+
+.icon-starnormal:before { content: "\e627"; }
+
+.icon-Team:before { content: "\e628"; }
+
+.icon-up:before { content: "\e629"; }
+
+.icon-truck:before { content: "\e62b"; }
+
+.icon-Waybill:before { content: "\e62c"; }
+
+.icon-answer:before { content: "\e62d"; }
+
+.icon-order:before { content: "\e626"; }
+
+.icon-arrow:before { content: "\e62a"; }
+
+.icon-right:before { content: "\e62e"; }
+
+.icon-information:before { content: "\e62f"; }
+
+.icon-key:before { content: "\e630"; }
+
+.icon-label:before { content: "\e631"; }
+
+.icon-tick:before { content: "\e632"; }
+
+.icon-time:before { content: "\e633"; }
+
+.icon-share:before { content: "\e634"; }
+

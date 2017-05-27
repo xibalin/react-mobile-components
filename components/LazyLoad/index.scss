@@ -1,0 +1,15 @@
+.lazyload-con{
+  overflow: hidden;
+  width:100%;
+  height:100%;
+  opacity: 1;
+  transition: opacity .3s ease-in;
+  &.none{
+    opacity: 0;
+  }
+  img{
+    width:100%;
+    height:100%;
+
+  }
+}

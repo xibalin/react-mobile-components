@@ -1,0 +1,60 @@
+{
+  "name": "ReactCore",
+  "version": "1.0.0",
+  "description": "fe-react-components",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "webpack --config webpack.prod.config.js",
+    "start": "webpack-dev-server -d --inline --hot --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.meedoo.cc:10443/fe/ReactCore.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "history": "^2.1.1",
+    "localforage": "^1.4.3",
+    "lodash": "^4.15.0",
+    "moment": "^2.15.1",
+    "prop-types": "^15.5.10",
+    "react": "^15.5.4",
+    "react-addons-css-transition-group": "^15.5.2",
+    "react-dom": "^15.5.4",
+    "superagent": "^2.2.0",
+    "superagent-prefix": "0.0.2"
+  },
+  "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
+    "babel": "^6.5.2",
+    "babel-polyfill": "^6.23.0",
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.4",
+    "babel-preset-latest": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "compression": "^1.6.2",
+    "css-loader": "^0.23.1",
+    "express": "^4.14.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.22.0",
+    "http-proxy": "^1.15.1",
+    "json-loader": "^0.5.4",
+    "node-sass": "^3.13.0",
+    "postcss-pxtorem": "^3.3.1",
+    "raw-loader": "^0.5.1",
+    "resolve-url": "^0.2.1",
+    "resolve-url-loader": "^1.6.0",
+    "sass": "^0.5.0",
+    "sass-loader": "^4.0.2",
+    "scp2": "^0.5.0",
+    "style-loader": "^0.13.1",
+    "superagent-mocker": "^0.5.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}

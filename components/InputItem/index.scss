@@ -1,0 +1,51 @@
+@import "../../static/style/variables";
+.InputItem {
+  width: 100%;
+  height: 4rem;
+  background: #fff;
+  >div{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    position: relative;
+    padding-left:$padding;
+    padding-right:$padding;
+    span:nth-child(1){
+      height:1.4rem;
+      line-height: 1.4rem;
+      flex-shrink:0 ;
+    }
+  }
+  &:nth-last-child(2) {
+    border-bottom: none;
+  }
+  i{margin-right:1.5rem}
+  input {
+    width: 100%;
+    border: none;
+    height: 2rem;
+    outline: none;
+    font-size: 1.5rem;
+  }
+  button{
+    right:1rem;
+  }
+  .list-item-line{
+    position: absolute;
+    width:100%;
+    height:1px;
+    z-index: 1;
+    background: #f7f7f7;
+    bottom:0;
+    left:0;
+  }
+  &.hidden{
+    display: none;
+  }
+  &.show{
+    display: block;
+  }
+}

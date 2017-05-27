@@ -1,0 +1,19 @@
+@import "../../static/style/variables";
+.codebutton{
+  height:2.5rem;
+  padding-left:1rem;
+  padding-right:1rem;
+  position: absolute;
+  z-index: 1;
+  font-size: 1.2rem;
+  border:$c-main solid thin;
+  color:$c-main;
+  background:#fff;
+  border-radius: .5rem;
+  outline: none;
+  &.disable{
+    border:none;
+    background: #eee;
+    color:#aaa;
+  }
+}

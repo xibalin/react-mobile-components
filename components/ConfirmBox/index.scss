@@ -1,0 +1,57 @@
+@import "../../static/style/variables";
+.fe-confirmBox{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index: 10;
+  .confirmMain{
+    &.modal{
+      transform: translateY(-30%);
+      opacity: 0;
+    }
+    transition: all .5s cubic-bezier(0, 0, 0,1) ;
+    position: absolute;
+    top:20rem;
+    z-index:100;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left:3rem;
+    padding-right:3rem;
+    p{
+      width:100%;
+      height:10rem;
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+      background: #fff;
+      border-radius: .5rem .5rem 0 0;
+      justify-content: center;
+      font-size: 2rem;
+      >span:nth-child(2){
+        color:#888;
+        font-size:1.6rem;
+        margin-top:1rem;
+      }
+    }
+    nav{
+      width:50%;
+      height:6rem;
+      line-height: 6rem;
+      text-align:center;
+      font-size: 1.6rem;
+      background: #fff;
+      border-top:#eee solid thin;
+      border-radius: 0 0 0 .5rem;
+      &:nth-child(3){
+        border-left:#eee solid thin;
+        color:$c-main;
+        border-radius: 0 0 .5rem 0;
+      }
+    }
+  }
+}

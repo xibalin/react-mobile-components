@@ -1,0 +1,10 @@
+@mixin icon{
+  width:1.5rem;
+  height:1.5rem;
+  display: block;
+}
+.icon-hascert{
+  @include icon;
+  background: url('static/icons/has-cert.png') no-repeat center;
+  background-size:100% ;
+}

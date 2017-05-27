@@ -1,0 +1,201 @@
+/*
+ * 1. 10px = 1em = 100% = 8pt
+ * 2. 防止 iOS 横屏字号放大，同时保证在PC上 zoom 功能正常
+ */
+html {
+  font-size: 62.5%; /* 1 */
+  -ms-text-size-adjust: 100%; /*2*/
+  -webkit-text-size-adjust: 100%; /*2*/
+  text-size-adjust: 100%; /*2*/
+}
+
+@media screen and (min-width: 390px) {
+  html {
+    font-size: 70%;
+  }
+}
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 90%;
+  }
+}
+body {
+  font-family: "微软雅黑", Helvetica Neue, Helvetica, Arial, sans-serif;
+  color:#646464;
+}
+/*
+ * 1. dt 默认没边距
+ * 2. li 默认没边距
+ * 3. code 默认没边距
+ * 4. th,td 默认padding:1px
+ */
+body, dl, dd, /* 1 */
+ul, ol, /*2*/
+h1, h2, h3, h4, h5, h6, pre, /*3*/
+form, fieldset, legend, input, textarea, optgroup,
+p, blockquote, figure, hr, menu, dir,
+thead, tbody, tfoot, th, td, /*4*/
+div, button
+{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/*
+ * 1.基本的链接样式
+ * 2.去掉 IE 10+ 点击链接时的灰色背景
+ */
+a {
+  text-decoration: none; /*1*/
+}
+
+a:hover {
+  text-decoration: underline; /*1*/
+}
+
+a:active {
+  background-color: transparent; /*2*/
+}
+
+/**
+ * 去掉列表前的标识, li会继承
+ */
+ul, ol {
+  list-style-type: none;
+  list-style-image: none;
+}
+
+/*
+ * 移除默认边框
+ */
+img, iframe {
+  border: 0;
+}
+
+/*
+ * 移除单元格间距让其边重合
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+ * 修复th不继承text-align，默认左对齐
+ */
+caption, th {
+  text-align: left;
+}
+
+/*
+ * 斜体扶正
+ */
+address, cite, dfn, em, var {
+  font-style: normal;
+}
+
+/*
+ * 统一引用标记
+ */
+q:before, q:after {
+  content: '';
+}
+
+/*
+ * 统一上标和下标
+ */
+sub, sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+body, html {
+  font-family: sans-serif;
+  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+  background: #f7f7f7;
+}
+body {
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+  font-size: 1.4rem;
+}
+
+a, div, header, span, button {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+a {
+  text-decoration: none;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+div,input,button,textarea {
+  box-sizing: border-box;
+  font-family: "微软雅黑", Helvetica Neue, Helvetica, Arial, sans-serif;
+  color:#646464;
+}
+textarea, input {
+  outline: none;
+}
+
+.zc-container {
+  height:100%;
+  background: #f7f7f7;
+}
+
+#content {
+  height: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+}
+.mask{
+  position: absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  background: rgba(0,0,0,0.3);
+  z-index: 1;
+  &.modal{
+    opacity: 0;
+  }
+}
+.blue{
+  color:#0199da;
+}
+.absoulte-center{
+  position: absolute;
+  margin: auto;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+.btn-info{
+  background: #0199da;
+}
+.btn-white{
+  border:#ddd solid thin;
+  background: #fff;
+  color:#646464
+}

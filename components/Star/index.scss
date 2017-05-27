@@ -1,0 +1,15 @@
+@import "../../static/style/variables";
+.fe-star {
+  width:auto;
+  height:2.5rem;
+  display: inline-flex;
+  align-items: center;
+  > * {
+
+    display: inline-block;
+  }
+
+  .icon-starhover{
+    color:$c-yellow;
+  }
+}

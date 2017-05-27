@@ -1,0 +1,13 @@
+@import "variables";
+.u-cell{
+  padding-left:$padding;
+  >div{
+    border-bottom:#eee solid thin;
+  }
+}
+.u-lg-cell{
+  padding-left:$padding+2.6rem;
+  >div{
+    border-bottom:#eee solid thin;
+  }
+}

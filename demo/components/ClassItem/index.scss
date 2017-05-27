@@ -1,0 +1,38 @@
+
+.item{
+  padding:1rem;
+  border-bottom:solid thin #ccc;
+  .pic{
+    display: flex;
+    justify-content: center;
+    >div{
+      width:80%;
+      height:8rem;
+      border-radius: 1rem;
+      border:solid thin #ccc;
+      overflow: hidden;
+    }
+  }
+  .info{
+    padding:0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.grid_view .pic {
+  color: #bbb;
+  float: left;
+  padding-right: 25px;
+}
+.grid_view .pic em {
+  float: left;
+  padding: 0 10px;
+}
+.grid_view .info {
+  overflow: hidden;
+  zoom: 1;
+}
+.info p {
+  margin: 10px 0;
+  color: #666;
+}
